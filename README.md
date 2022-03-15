@@ -14,7 +14,8 @@ To install the program use:
 ```
 go install github.com/mobiuscode-de/imap-extractor@latest
 ```
-or download a binary from the latest github-release.
+or download a binary from the latest github-release: \
+https://github.com/mobiuscode-de/imap-extractor/releases
 
 
 To call the program use:
