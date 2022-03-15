@@ -46,7 +46,7 @@ A configuration to extract the code detailed in the email could look something l
 
 ```json
 {
-  "imap-host": "mobiuscode.de/",
+  "imap-host": "mobiuscode.de",
   "imap-port": 993,
   "username": "user@mobiuscode.de",
   "password": "$EMAIL_PW",
