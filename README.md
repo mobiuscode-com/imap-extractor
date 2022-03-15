@@ -34,7 +34,7 @@ On execution this program will go through the inbox of given email address from 
 Once any match with the given regex is found, the content of the first capturing group in the regex will be returned. 
 
 
-##Config Example:
+## Config Example:
 ```json
 {
   "imap-host": "mobiuscode.de/",
