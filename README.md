@@ -9,7 +9,7 @@ The path to said configuration shall be passed as first parameter of the program
 Disclaimer: This tool was just a quick implementation for our CI needs, which might also be useful for others.
 
 
-##Usage:
+## Usage:
 To call the program use:
 ```
 imap-extractor <path to config json>
@@ -19,7 +19,7 @@ For detailed description of config json see below. Configured regex needs to con
 Result will be content of group of first match found in the email inbox.
 Additional unnamed groups may be used inside the regex.
 
-##Parameters:
+## Parameters:
 
 The following configurations are to be included in the configuration:
 * imap-host: Url on which the email host can be reached
