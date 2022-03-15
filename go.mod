@@ -1,4 +1,4 @@
-module imap-extractor
+module github.com/mobiuscode-de/imap-extractor
 
 go 1.16
 

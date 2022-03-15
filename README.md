@@ -10,6 +10,12 @@ Disclaimer: This tool was just a quick implementation for our CI needs, which mi
 
 
 ## Usage:
+To install the program use:
+```
+go install github.com/mobiuscode-de/imap-extractor@latest
+```
+
+
 To call the program use:
 ```
 imap-extractor <path to config json>
@@ -29,19 +35,24 @@ The following configurations are to be included in the configuration:
 * from-filter: Name filter for email origin
 * regexp: Regex for which the emails will be scanned, including a group for the result
 
+Any value might be preceded by a $ Symbol to indicate that its value shall be fetched by an environment variable. 
 
 On execution this program will go through the inbox of given email address from newest to oldest.
 Once any match with the given regex is found, the content of the first capturing group in the regex will be returned. 
 
 
 ## Config Example:
+Basic example of a configuration to extract a line of content that is preceded by the text "please see:" and surrounded by arbitrary whitespace.
+
 ```json
 {
   "imap-host": "mobiuscode.de/",
   "imap-port": 993,
   "username": "user@mobiuscode.de",
-  "password": "tryOutPanicMode",
+  "password": "$EMAIL_PW",
   "from-filter": "boss@mobiuscode.de",
-  "regexp": "please see important thing below:(?:[\\s]+)([\\S]+)(?:[\\s]+)"
+  "regexp": "please see:(?:[\\s]+)([\\S]+)(?:[\\s]+)"
 }
 ```
+
+Note: Password is extracted from environment variable in this case, which is also recommended for usage of the tool in a CI environment.
