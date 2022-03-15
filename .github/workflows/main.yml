@@ -30,6 +30,6 @@ jobs:
         run: echo Hello, world!
         
       - name: Go Release Binary
-        uses: ngs/go-release.action@v1.0.2
+        uses: ngs/go-release.action@a32a23d081d503245410d9d7bf59b722b50cc766
 
           echo test, and deploy your project.
