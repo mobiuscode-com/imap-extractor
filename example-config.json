@@ -1,8 +1,0 @@
-{
-  "imap-host": "<Insert imap host url>",
-  "imap-port": <IMAP port (Usually 143 or 993)>,
-  "username": "<login email-address>",
-  "password": "<login password>",
-  "from-filter": "<Name filter for From field>",
-  "regexp": "<go-lang regex inlcuding at least one group for the result>"
-}

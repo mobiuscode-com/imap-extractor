@@ -1,3 +1,17 @@
+// Copyright 2022 MobiusCode GmbH
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 package main
 
 import (
@@ -18,17 +32,17 @@ import (
 
 type Config struct {
 	// Host URL on which the emails are received
-	ImapHost      string `json:"imap-host"`
+	ImapHost string `json:"imap-host"`
 	// Port for the IMAP protocol
-	ImapPort      int    `json:"imap-port"`
+	ImapPort int `json:"imap-port"`
 	// Email-User for login
-	EmailUser     string `json:"username"`
+	EmailUser string `json:"username"`
 	// Corresponding password
 	EmailPassword string `json:"password"`
 	// Filter for the "from" email field (Name, not email)
-	FromFilter    string `json:"from-filter"`
+	FromFilter string `json:"from-filter"`
 	// Regex to be scanned for, first matched group is used as a result
-	ContentRegex  string `json:"regexp"`
+	ContentRegex string `json:"regexp"`
 }
 
 func main() {
