@@ -2,6 +2,7 @@
 # This action is based on examples given in:
 # https://github.com/wangyoucao577/go-release-action
 
+name: Build Binaries for Release
 
 on:
   release:
